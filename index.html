@@ -94,7 +94,6 @@ blockquote {
         <li><a href="#doit">how</a> <span class="bullet">&#x2022; </span></li>
         <li><a href="#wai">wai</a> <span class="bullet">&#x2022; </span> </li>
         <li><a href="#learnmore">learn&#xA0;more</a> <span class="bullet">&#x2022; </span> </li>
-        <li><a href="#pressreleases">recent&#xA0;press&#xA0;releases</a> <span class="bullet">&#x2022; </span> </li>
         <li><a href="#specifications">current&#xA0;status&#xA0;of&#xA0;specifications</a>&#xA0;and&#xA0;<a href="#w3c_groups">groups</a></li>
       </ul>
       <div class="w3c_toc"> <!-- --> </div>
@@ -121,6 +120,7 @@ blockquote {
             <h2><a name="case" id="case"></a>Why: The Case for Web Accessibility </h2>
             <p>It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities. Indeed, the <a href="http://www.un.org/disabilities/convention/conventionfull.shtml">UN Convention on the Rights of Persons with Disabilities</a> recognizes access to information and communications technologies, including the Web, as <strong>a basic human right</strong>.</p>
             <p><strong>Accessibility supports social inclusion</strong> for people with disabilities as well as <a href="http://www.w3.org/WAI/bcase/soc.html#groups">others</a>, such as <a href="http://www.w3.org/WAI/bcase/soc.html#older">older people</a>, people in rural areas, and people in developing countries.</p>
+            <p>Accessibility also benefits people without disabilities. The <a href="https://www.youtube.com/watch?v=3f31oufqFSM">Web Accessibility Perspectives video</a> shows examples  of how accessibility is essential for people with disabilities and useful  for everyone in a variety   of situations.</p>
             <p><strong>There is also a strong business case for accessibility.</strong> Accessibility overlaps with other best practices such as <a href="http://www.w3.org/WAI/mobile/">mobile web design</a>, device independence, multi-modal interaction, usability, <a href="http://www.w3.org/WAI/bcase/soc.html#older">design for older users</a>, and <a href="http://www.w3.org/WAI/bcase/fin.html#seo">search engine optimization (SEO)</a>. Case studies show that accessible websites have better search results, reduced maintenance costs, and increased audience reach, among other benefits. <a href="/WAI/bcase/Overview">Developing a Web Accessibility Business Case for Your Organization</a> details the social, technical, financial, and legal benefits of web accessibility.</p>
             <h2 id="examples">What: Examples of Web Accessibility</h2>
             <p>Properly designed websites and web tools can be <a href="http://www.w3.org/WAI/intro/people-use-web.php">used by people with disabilities</a>. However, currently many sites and tools are developed with accessibility barriers that make it difficult or impossible for some people to use them. Below are just a few examples.</p>
@@ -128,49 +128,32 @@ blockquote {
             <span class="example-alt"><img src="http://www.w3.org/WAI/intro/alt-logo.png" alt="image of logo; HTML markup img alt='Web Accessibility Initiative logo'" /></span>
             <p>Alt text is the classic example. Images should include <em><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">equivalent alternative text</a></em> in the markup/code.</p>
             <p>If alt text isn't provided for images, the image information is inaccessible, for example, to people who cannot see and use a screen reader that reads aloud the information on a page, including the alt text for the visual image.</p>
-            <p>When equivalent alt text is provided, the information is available to everyone to people who are blind, as well as to people who turned off images on their mobile phone to lower bandwidth charges, people in a rural area with low bandwidth who turned off images to speed download, and others. It's also available to technologies that cannot see the image, such as search engines.</p>
+            <p>When equivalent alt text is provided, the information is available to people who are blind, as well as to people who turned off images on their mobile phone to lower bandwidth charges, people in a rural area with low bandwidth who turned off images to speed download, and others. It's also available to technologies that cannot see the image, such as search engines.</p>
             <h3>Keyboard Input</h3>
             <span class="example-di"><img src="https://www.w3.org/WAI/intro/no-mouse.png" width="67" height="45" alt="mouse crossed out" /></span>
             <p class="di">Some people cannot use a mouse, including many older users with limited fine motor control. An accessible website does not rely on the mouse; it provides <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html">all functionality via a keyboard</a>. Then people with disabilities can use <a href="http://www.w3.org/WAI/users/involving#at">assistive technologies</a> that mimic the keyboard, such as speech input.</p>
-            <h3>Transcripts for Podcasts</h3>
+            <h3>Transcripts for Audio</h3>
             <span class="example-transcript"><a href="http://www.w3.org/WAI/highlights/200606wcag2interview.html"><img src="http://www.w3.org/WAI/intro/transcript.png" width="251" height="254" alt="example transcript" /></a></span>
             <p>Just as images aren't available to people who can't see, audio files aren't available to people who can't hear. Providing a text transcript makes the audio information accessible to people who are deaf or hard of hearing, as well as to search engines and other technologies that can't hear.</p>
-            <p>It's easy and relatively inexpensive for website developers to provide transcripts for podcasts and audio files. There are also <a href="http://www.uiaccess.com/transcripts/transcript_services.html">transcription services</a> that create text transcripts in HTML format.</p>
+            <p>It's easy and relatively inexpensive for websites to provide transcripts. There are also <a href="http://www.uiaccess.com/transcripts/transcript_services.html">transcription services</a> that create text transcripts in HTML format.</p>
             <h2><a name="doit" id="doit"></a>How: Make Your Website and Web Tools Accessible </h2>
-            <p>Most of the basics of accessibility are even easier and less expensive than providing transcripts. However, the proper techniques are poorly integrated into some web tools, education, and development processes. If you are new to accessibility, it takes some time and effort to learn the common issues and solutions. A starting place is the <a href="http://www.w3.org/WAI/intro/accessibility.php">Introduction to Web Accessibility</a>.</p>
+            <p class="listintrop">Most of the basics of accessibility are even easier and less expensive than providing transcripts. However, the proper techniques are poorly integrated into some web tools, education, and development processes. If you are new to accessibility, it takes some time and effort to learn the common issues and solutions. Here are places to start:</p>
+            <ul class="listafterpul show_items">
+              <li><a href="https://www.w3.org/WAI/intro/people-use-web/principles">Accessibility Principles</a> &mdash; introduces accessibility requirements and provides references international web accessibility standards.</li>
+              <li><a href="https://www.w3.org/WAI/eval/preliminary">Easy Checks - A First Review</a> &mdash; helps you start to test the accessibility of a web page and understand some common accessibility barriers.</li>
+              <li><a href="https://www.w3.org/WAI/gettingstarted/tips/">Tips for Getting Started</a> &mdash; introduces some basic considerations for designing, writing, and developing for web accessibility.<br />
+              </li>
+            </ul>
             <p>Some accessibility barriers are more complicated to avoid and the solutions take more development time and effort. W3C WAI provides extensive resources to help, such as <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/">Understanding WCAG 2.0: A guide to understanding and implementing Web Content Accessibility Guidelines 2.0</a>.</p>
             <p>Using <a href="http://www.w3.org/WAI/impl/software">authoring tools that support accessibility</a> makes it easier for website developers. Browsers also play a role in accessibility. <a href="http://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a> explains the relationships between the different components of web development and interaction.</p>
             <p><strong>Accessibility is essential for developers and organizations that want to create high quality websites and web tools, and not exclude people from using their products and services.</strong></p>
             <h2><a name="wai" id="wai"></a>Web Accessibility Initiative (WAI) at W3C </h2>
             <p>The W3C <a href="http://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a> brings together people from industry, disability organizations, government, and research labs from around the world to <a href="http://www.w3.org/WAI/intro/w3c-process.php">develop guidelines</a> and <a href="http://www.w3.org/WAI/Resources/">resources</a> to help make the Web accessible to people with disabilities including auditory, cognitive, neurological, physical, speech, and visual disabilities.</p>
             <p>WAI's coverage of web accessibility includes '<a href="http://www.w3.org/WAI/intro/wcag.php">web content</a>' (websites and web applications), <a href="http://www.w3.org/WAI/intro/atag.php">authoring tools</a> (such as content management systems (CMS) and blog software), browsers and other '<a href="http://www.w3.org/WAI/intro/uaag.php">user agents</a>', and <a href="http://www.w3.org/WAI/PF/">W3C technical specifications</a>, including <a href="http://www.w3.org/WAI/intro/aria.php">WAI-ARIA</a> for accessible rich Internet applications.</p>
-            <p>We invite individuals and organizations to <a href="http://www.w3.org/WAI/participation">participate in WAI</a> by volunteering to implement, promote, and review guidelines; contributing to the <a href="http://www.w3.org/WAI/IG/">WAI Interest Group</a>; and participating in <a href="http://www.w3.org/WAI/groups.html">Working Groups</a>.<br />
+            <p>We invite individuals and organizations to <a href="http://www.w3.org/WAI/participation">participate in WAI</a> by  implementing, promoting, and reviewing guidelines; contributing to the <a href="http://www.w3.org/WAI/IG/">WAI Interest Group</a>; and participating in <a href="http://www.w3.org/WAI/groups.html">Working Groups</a>.<br />
             </p>
             <h2 id="learnmore">Learn More</h2>
-            <p>WAI provides a wide range of resources on different aspects of web accessibility standards, education, implementation, and policy, including: </p>
-            <ul class="show_items">
-              <li><a href="http://www.w3.org/WAI/intro/accessibility.php">Introduction to Web Accessibility</a></li>
-              <li><a href="http://www.w3.org/WAI/intro/components.php">Essential Components of Web Accessibility</a></li>
-              <li><a href="http://www.w3.org/WAI/intro/people-use-web">How People with Disabilities Use the Web</a></li>
-              <li><a href="http://www.w3.org/WAI/impl/improving">Improving the Accessibility of Your Web Site</a></li>
-              <li><a href="http://www.w3.org/WAI/managing.html">Managing Accessibility</a></li>
-              <li><a href="http://www.w3.org/WAI/eval/">Evaluating Web Accessibility</a></li>
-              <li>Standards, guidelines, and techniques for making accessible
-                <ul>
-                  <li>websites: <a href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG)</a></li>
-                  <li>authoring tools: <a href="http://www.w3.org/WAI/intro/atag.php">Authoring Tool Accessibility Guidelines (ATAG)</a></li>
-                  <li>browsers: <a href="http://www.w3.org/WAI/intro/uaag.php">User Agent Accessibility Guidelines (UAAG)</a></li>
-                  <li>web applications: <a href="http://www.w3.org/WAI/intro/aria.php">Accessible Rich Internet Applications (WAI-ARIA)</a></li>
-                </ul>
-              </li>
-              <li><a href="/WAI/bcase/Overview">Developing a Web Accessibility Business Case for Your Organization</a></li>
-              <li><a href="http://www.w3.org/WAI/">WAI home page highlights</a></li>
-              <li>and more <a href="http://www.w3.org/WAI/Resources/">WAI Resources</a></li>
-            </ul>
-            <div xmlns:site="http://www.w3.org/2008/site/" id="recentpress"><!-- start generated recent press -->
-              <h2>Recent Press</h2>
-              <p>[generated recent press]</p>
-              <!-- end generated recent press --></div>
+            <p>WAI provides a wide range of resources on different aspects of web accessibility <a href="https://www.w3.org/WAI/guid-tech">standards</a>, <a href="https://www.w3.org/WAI/train">education</a>, <a href="https://www.w3.org/WAI/eval">testing/evaluation</a>, <a href="https://www.w3.org/WAI/managing">project management, and policy</a>. We encourage you to explore the <a href="http://www.w3.org/WAI/">WAI website</a>, or look through the <a href="http://www.w3.org/WAI/Resources/">WAI Resources</a> list.</p>
             <h2 id="specifications">Current Status of Specifications</h2>
             <p>Learn more about the current status of specifications related to: </p>
             <div id="w3c_techs_body">
@@ -181,8 +164,8 @@ blockquote {
                 <li><a href="/standards/techs/uaag">User Agent Accessibility Guidelines (UAAG)</a></li>
                 <li><a href="/standards/techs/atag">Authoring Tool Accessibility Guidelines (ATAG)</a></li>
                 <li><a href="/standards/techs/earl">Evaluation and Report Language (EARL)</a></li>
-                <li><a href="/standards/techs/indieui">IndieUI</a></li>
-                <li><a href="/standards/techs/mobileaccessibility">Mobile Accessibility</a></li>
+                <li><a href="/standards/techs/indieui">IndieUI</a> <em>[@@ need to figure out how to have this not included in this list]</em></li>
+                <li><a href="/standards/techs/mobileaccessibility">Mobile Accessibility</a> <em>[@@ need to figure out how to have this not included in this list]</em></li>
               </ul>
             </div>
             <p>These <a href="/Consortium/activities">W3C Groups</a> are working on the related specifications: </p>
@@ -210,12 +193,13 @@ blockquote {
                 <li><a href="/standards/techs/uaag">User Agent Accessibility Guidelines (UAAG)</a></li>
                 <li><a href="/standards/techs/atag">Authoring Tool Accessibility Guidelines (ATAG)</a></li>
                 <li><a href="/standards/techs/earl">Evaluation and Report Language (EARL)</a></li>
-                <li><a href="/standards/techs/indieui">IndieUI</a></li>
-                <li><a href="/standards/techs/mobileaccessibility">Mobile Accessibility</a></li>
+                <li><s><a href="/standards/techs/indieui">IndieUI</a></s></li>
+                <li><s><a href="/standards/techs/mobileaccessibility">Mobile Accessibility</a></s></li>
               </ul>
             </div>
             <div id="useitrhs">
               <h2 class="h4 category">Use It</h2>
+              <p>[@@ what do we want in this section?]</p>
               <ul class="theme right-list">
                 <li><a href="http://www.w3.org/WAI/Resources/">How People with Disabilities Use the Web</a></li>
                 <li><a href="http://www.w3.org/WAI/impl/improving">Improving the Accessibility of Your Web Site</a></li>
@@ -233,7 +217,7 @@ blockquote {
             </div>
           </div>
           <!-- /end #contextnav --> </div>
-        <h2>Acknowledgements</h2>
+        <h2>Acknowledgments</h2>
         <p>Editors: Shawn Lawton Henry and Liam McGee.<br />
           Contributors: Shadi Abou-Zahra, Andrew Arch, Alan Chuter, Sylvie Duchateau, Jack Welsh, William Loughborough, Catherine Roy, Sharron Rush, Yeliz Yesilada, and other <a href="http://www.w3.org/WAI/EO/EOWG-members">participants</a> of the Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
       </div>
